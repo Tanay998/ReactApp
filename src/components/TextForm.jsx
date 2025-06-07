@@ -74,18 +74,28 @@ const TextForm = (props) => {
             style={{color: getTextColor()}}
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
-          Convert to Upper Case
-        </button>
-        <button className="btn btn-secondary ms-3" onClick={handleLoClick}>
-          Convert to Lower Case
-        </button>
-        <button className="btn btn-danger ms-3" onClick={handleCase}>
-          SentenceCase
-        </button>
-        <button className="btn btn-warning ms-3" onClick={handleReverseCase}>
-          ReverseCase
-        </button>
+        <div className="row">
+          <div className="col-md-3 mt-2">
+            <button className="btn btn-primary" onClick={handleUpClick}>
+              Convert to Upper Case
+            </button>
+          </div>
+          <div className="col-md-3 mt-2">
+            <button className="btn btn-secondary" onClick={handleLoClick}>
+              Convert to Lower Case
+            </button>
+          </div>
+          <div className="col-md-3 mt-2">
+            <button className="btn btn-danger" onClick={handleCase}>
+              SentenceCase
+            </button>
+          </div>
+          <div className="col-md-3 mt-2">
+            <button className="btn btn-warning" onClick={handleReverseCase}>
+              ReverseCase
+            </button>
+          </div>
+        </div>
       </div>
       <div className="container my-3">
         <h1 style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>
@@ -95,7 +105,7 @@ const TextForm = (props) => {
           {text.trim() === "" ? 0 : text.trim().split(/\s+/).length} words and {text.length} characters
         </p>
         <p style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>
-          {0.008 * text.split(" ").length} Minutes read
+          {0.008 * text.split(" ").filter((element) =>{return element.length!==0}).length} Minutes read
         </p>
         <h2 style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>Preview</h2>
         <p style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>
