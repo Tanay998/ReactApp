@@ -37,7 +37,7 @@ function Navbar(props) {
               <Link className={`nav-link active ${getTextColor()}`} to="/TextForm">Text Form</Link>
             </li>
           </ul>
-          <div className="container d-flex justify-content-start align-items-center">
+          <div className="container d-flex justify-content-start align-items-center mx-auto">
             <div className="row w-75 ms-1">
             <div className="d-flex align-items-center">
               <div className="col-md-3">
