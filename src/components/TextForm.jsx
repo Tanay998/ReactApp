@@ -76,22 +76,22 @@ const TextForm = (props) => {
         </div>
         <div className="row">
           <div className="col-md-3 mt-2">
-            <button className="btn btn-primary" onClick={handleUpClick}>
+            <button disabled={text.length===0} className="btn btn-primary" onClick={handleUpClick}>
               Convert to Upper Case
             </button>
           </div>
           <div className="col-md-3 mt-2">
-            <button className="btn btn-secondary" onClick={handleLoClick}>
+            <button disabled={text.length===0} className="btn btn-secondary" onClick={handleLoClick}>
               Convert to Lower Case
             </button>
           </div>
           <div className="col-md-3 mt-2">
-            <button className="btn btn-danger" onClick={handleCase}>
+            <button disabled={text.length===0} className="btn btn-danger" onClick={handleCase}>
               SentenceCase
             </button>
           </div>
           <div className="col-md-3 mt-2">
-            <button className="btn btn-warning" onClick={handleReverseCase}>
+            <button disabled={text.length===0} className="btn btn-warning" onClick={handleReverseCase}>
               ReverseCase
             </button>
           </div>
