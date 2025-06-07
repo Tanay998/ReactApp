@@ -38,7 +38,7 @@ function Navbar(props) {
             </li>
           </ul>
           <div className="container d-flex justify-content-start align-items-center mx-auto">
-            <div className="row w-75 ms-1">
+            <div className="row w-75">
             <div className="d-flex align-items-center">
               <div className="col-md-3">
                  <div className="form-check form-switch me-3">
