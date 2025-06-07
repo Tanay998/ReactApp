@@ -52,7 +52,7 @@ function Navbar(props) {
               </label>
             </div>
             
-            <div className="form-check form-switch ms-2">
+            <div className="form-check form-switch ms-2 my-2">
               <input 
                 className="form-check-input" 
                 type="checkbox" 
@@ -66,7 +66,7 @@ function Navbar(props) {
               </label>
             </div>
             
-            <div className="form-check form-switch ms-2">
+            <div className="form-check form-switch ms-2 my-2">
               <input 
                 className="form-check-input" 
                 type="checkbox" 
@@ -80,7 +80,7 @@ function Navbar(props) {
               </label>
             </div>
 
-            <div className="form-check form-switch ms-2">
+            <div className="form-check form-switch ms-2 my-2">
               <input 
                 className="form-check-input" 
                 type="checkbox" 
