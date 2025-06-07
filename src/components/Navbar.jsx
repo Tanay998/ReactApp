@@ -40,7 +40,7 @@ function Navbar(props) {
           </ul>
           
           {/* Simplified theme toggles structure */}
-          <div className="d-flex align-items-center">
+          <div className="d-flex flex-wrap align-items-center">
             <div className="form-check form-switch me-3">
               <input 
                 className="form-check-input" 
