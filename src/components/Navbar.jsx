@@ -37,7 +37,7 @@ function Navbar(props) {
               <Link className={`nav-link active ${getTextColor()}`} to="/TextForm">Text Form</Link>
             </li>
           </ul>
-          <div className="row">
+          <div className="row w-75">
             <div className="d-flex align-items-center">
               <div className="col-md-3">
                  <div className="form-check form-switch me-3">
