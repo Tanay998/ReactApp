@@ -4,6 +4,9 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import Alert from './components/Alert';
 import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './App.css'; // Custom styles
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {

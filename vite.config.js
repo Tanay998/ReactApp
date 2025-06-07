@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base : '/ReactApp/' // Set the base path for deployment
+  optimizeDeps: {
+    include: ['bootstrap']
+  },
+  base : '/ReactApp/'
 })
