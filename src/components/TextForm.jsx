@@ -105,7 +105,7 @@ const TextForm = (props) => {
           {text.trim() === "" ? 0 : text.trim().split(/\s+/).length} words and {text.length} characters
         </p>
         <p style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>
-          {0.008 * text.split(" ").filter((element) =>{return element.length!==0}).length} Minutes read
+          {0.008 * text.split(/\s+/).filter((element) =>{return element.length!==0}).length} Minutes read
         </p>
         <h2 style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>Preview</h2>
         <p style={{color: props.currentTheme === 'light' ? 'black' : 'white'}}>
